@@ -32,7 +32,7 @@ const handleSubmit = e => {
   const id = shortid.generate();
   const name = e.name;
   const number = e.number;
-  const contactsLists = [...this.state.contacts];
+  const contactsLists = [...contacts];
 
   if (contactsLists.findIndex(contact => name.toLowerCase() === contact.name.toLowerCase()) !== -1) {
     alert(`${name} is already in contacts.`);
